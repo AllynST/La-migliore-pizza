@@ -104,6 +104,9 @@ main{
     
 
 }
+#location>h2{
+    color:white;
+}
 #cards{
     display: flex;
     flex-wrap: wrap;
