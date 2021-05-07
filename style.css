@@ -35,12 +35,13 @@ nav>img{
 main{
     display:grid;
     grid-template-columns:20% 20% 20% 20% 20%;
-    grid-template-rows:300px 500px 800px;
+    grid-template-rows:300px 450px auto auto;
 
     grid-template-areas: 
     "carousel carousel carousel carousel carousel"
     "location location location location location"
-    "promotions promotions promotions promotions promotions";
+    "promotions promotions promotions promotions promotions"
+    "aboutus aboutus aboutus aboutus aboutus";
 
     margin:auto;
     overflow: hidden;
@@ -52,6 +53,7 @@ main{
 .headers{
     text-align: center;
     margin-top:50px;
+    margin-bottom: 40px;
     
 
 }
@@ -79,7 +81,7 @@ main{
 #location{
     grid-area: location;
 
-    background-color: #FB8B24;
+    background-color: #383837;
     text-align: center;    
     width: 100%;
 }
@@ -97,14 +99,15 @@ main{
 #promocje{
     grid-area:promotions;
     width:100%;
-    justify-self: stretch
-    border-bottom: solid black 1px;
+    justify-self: stretch;
     padding-bottom: 20px;
+    
 
 }
 #cards{
     display: flex;
     flex-wrap: wrap;
+    width:auto;
 
 }
 .card{
@@ -112,6 +115,7 @@ main{
     background-color: #dfd1c5;
     margin-top:30px;
     text-align: center;
+ 
     
     position: relative;
     width:250px;
@@ -128,6 +132,9 @@ main{
 }
 .card>button{
 
+}
+#aboutus{
+    grid-area:aboutus;
 }
 
 
