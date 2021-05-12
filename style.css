@@ -35,13 +35,15 @@ nav>img{
 main{
     display:grid;
     grid-template-columns:20% 20% 20% 20% 20%;
-    grid-template-rows:300px 450px auto auto;
+    grid-template-rows:300px auto auto auto 450px;
 
     grid-template-areas: 
     "carousel carousel carousel carousel carousel"
-    "location location location location location"
     "promotions promotions promotions promotions promotions"
-    "aboutus aboutus aboutus aboutus aboutus";
+    "daily daily daily daily daily"   
+    "aboutus aboutus aboutus aboutus aboutus"
+    "location location location location location"
+    "footer footer footer footer footer";
 
     margin:auto;
     overflow: hidden;
@@ -132,14 +134,42 @@ main{
 .card>p{
     font-size: 18px;
     font-weight: bold;
+    text-align: center;
 }
 .card>button{
 
+    background-color: #e3e3e3;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-color:#e1930f;
+
+}
+.card>button:hover{
+
+    background-color: #e3e3e3;
+    opacity:0.5;
+    border-radius: 5px;
+
+}
+
+
+
+#daily{
+    grid-area: daily;
 }
 #aboutus{
     grid-area:aboutus;
 }
+footer{
+    grid-area: footer;
+}
+p{
 
+    margin-left:15px;
+    margin-right:15px ;
+    text-align: justify;
+
+}
 
 
 

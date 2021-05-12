@@ -1,50 +1,36 @@
+daily();
+let landingPage = document.getElementById("landingPage");
+let menuPage = document.getElementById("menuPage");
+function daily() {
+
+  let container = document.getElementById("dateBox");
+
+
+  let d = new Date();
+  let dayNum = d.getDate();
+
+  let days = ["Niedziela","Poniedziałek","Wtorek","Środa","Czwartek","Piątek","Sobota"];
+  let month = ["Styczeń","Luty","Marzec","Kwiecień","Maj","Czerwiec","Lipiec","Wrzesień","Październik","Listopad","Grudzień"]
+
+  let final =  days[d.getDay()]+" " +dayNum +" "+month[d.getMonth()]+" "+d.getFullYear();
+  container.innerHTML = final;
 
 
 
-function onLoad(){
-    var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
 
-        
-      document.getElementById("main").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", "main.txt", true);
-  xhttp.send();
-  
+}
+function about(){
+  //window scrollto(x,y)
 
 }
 function menu(){
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-    
-            
-          document.getElementById("main").innerHTML = this.responseText;
-        }
-      };
-      xhttp.open("GET", "menu.txt", true);
-      xhttp.send();
-      
-    
+  
+  menuPage.style.display = 'block';
+  landingPage.style.display = 'none';
+
 }
-
-function About(){
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-    
-            
-          document.getElementById("main").innerHTML = this.responseText;
-        }
-      };
-      xhttp.open("GET", "style1.css", true);
-      xhttp.send();
-      
-    
+function home(){
+  
+  menuPage.style.display = 'none';
+  landingPage.style.display = 'block';
 }
-
-
-
-
