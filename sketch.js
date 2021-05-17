@@ -34,3 +34,13 @@ function home(){
   menuPage.style.display = 'none';
   landingPage.style.display = 'block';
 }
+
+console.log( document.getElementsByClassName('pizzaofchoice'))
+
+function addToOrder(a){
+let pizzas = ['margerita','pizzeria']
+let pizzaIndex = a;
+
+let pizzaSize = document.getElementsByClassName('pizzaofchoice').value[a];
+console.log(pizzas[a]+" "+pizzaSize)
+}

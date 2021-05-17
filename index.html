@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mainpage.css">
+    <link rel="stylesheet" href="menupage.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,7 +14,7 @@
 </head>
 <!-- <body onload="onLoad()"> -->
 
-<body onload="">
+<body onload="menu()">
     <div id="pageWrapper">
 
         <!-- Nawigacja -->
@@ -42,6 +43,16 @@
                 <div class="carouselIt">
                     <img src="carousel4.jpg" alt="">
                 </div>
+
+            </div>
+            <div id="carouseltxt">
+
+
+                <span class="carouseltxt1"></span>
+                <span class="carouseltxt2"></span>
+                <span class="carouseltxt3"></span>
+                <span class="carouseltxt4"></span>
+
 
             </div>
 
@@ -82,8 +93,8 @@
             </div>
             <!-- Promocje -->
 
-            
-           
+
+
             <!-- Pizza Dnia -->
 
             <div id="Daily">
@@ -105,8 +116,6 @@
 
             <!-- Pizza Dnia -->
 
-            <!-- Menu -->
-            <!-- Menu -->
 
             <!-- aboutus -->
 
@@ -177,13 +186,14 @@
             <!-- aboutus -->
 
 
-             <!-- kontakt i lokalizacja -->
-             <div id="location">
+            <!-- kontakt i lokalizacja -->
+            <div id="location">
                 <h2 class="headers">Nasza Lokacja</h2>
 
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20482.664561883877!2d20.032856804233255!3d50.08005062126778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471645a475bcda15%3A0xe287476a3ad5cf1!2sKopiec%20Wandy!5e0!3m2!1spl!2spl!4v1620320821263!5m2!1spl!2spl"
-                    allowfullscreen="" loading="lazy"></iframe>
+                    allowfullscreen="" loading="lazy">
+                </iframe>
 
 
             </div>
@@ -196,14 +206,89 @@
             <!-- kontakt i lokalizacja -->
 
             <footer></footer>
-           
+
 
         </main>
 
 
 
 
-        <main id="menuPage"></main>
+        <main id="menuPage">
+
+
+            <h1>Menu:</h1>
+
+            <div class='menuCard'>
+                <span class="menuTxt">
+
+                    <h3>Margherita </h3>
+                    <h4>Sos pomidorowy, Mozzarella</h4>
+                    
+                        <select class="pizaofchoice">
+                            <option value="small"> Mała </option>
+                            <option value="medium">Średnia 40cm</option>
+                            <option value="large">Duża 40cm</option>
+                            <option value="mega">Mega 40cm</option>
+                        </select>
+                          <button onclick="addToOrder(0)">Dodaj do koszyka</button>
+                        
+
+
+
+
+                    
+
+                </span>
+
+                <img src="margerita.jpg" alt="">
+
+
+            </div>
+            <div class='menuCard'>
+                <span class="menuTxt">
+
+                    <h3>Margherita </h3>
+                    <h4>Sos pomidorowy, Mozzarella</h4>
+
+                    <select>
+                        <option value="volvo"> Mała </option>
+                        <option value="saab">Średnia 40cm</option>
+                        <option value="mercedes">Duża 40cm</option>
+                        <option value="audi">Mega 40cm</option>
+                    </select>
+                      <button>Dodaj do koszyka</button>
+                    
+
+                </span>
+
+                <img src="margerita.jpg" alt="">
+
+
+            </div>
+            <div class='menuCard'>
+                <span class="menuTxt">
+
+                    <h3>Margherita </h3>
+                    <h4>Sos pomidorowy, Mozzarella</h4>
+
+                    <select>
+                        <option value="volvo"> Mała </option>
+                        <option value="saab">Średnia 40cm</option>
+                        <option value="mercedes">Duża 40cm</option>
+                        <option value="audi">Mega 40cm</option>
+                    </select>
+                      <button>Dodaj do koszyka</button>
+                    
+
+                </span>
+
+                <img src="margerita.jpg" alt="">
+
+
+            </div>
+            
+
+        </main>
 
 
 

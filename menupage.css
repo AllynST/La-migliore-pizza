@@ -1,0 +1,51 @@
+main#menupage{
+
+    display: flex;
+    
+
+    margin:auto; 
+    overflow: hidden; 
+
+
+    width:100vw;
+    background-color: #dfdfdf;    
+}
+
+.menuCard{
+    display:flex;
+    background-color: #dfd1c5;
+    border:solid 2px rgb(172, 172, 172);
+    border-left: 0px;
+    border-right: 0px;
+    height:170px;
+    
+    /* margin-left:2px;
+    margin-right:2px; */
+    margin-bottom: 5px;
+    padding:0px;
+}
+.menuTxt>h3{
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.menuTxt>h4{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+.menuTxt>select{
+    margin-bottom: 4px;
+}
+.menuTxt>button{
+    background-color: lime;
+}
+.menuCard>span{
+    width:50%;
+    text-align: center;
+
+}
+.menuCard>img{
+    width: 50%;
+    height: 100%;
+}
+
