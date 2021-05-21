@@ -8,7 +8,14 @@ main#menupage{
 
 
     width:100vw;
-    background-color: #dfdfdf;    
+    background-color: #dfdfdf;
+    text-align: center;    
+}
+#menupage>span{
+   margin-bottom: 15px;
+   margin-top: 50px;
+    
+ 
 }
 
 .menuCard{
@@ -27,9 +34,12 @@ main#menupage{
 .menuTxt>h3{
     font-weight: bold;
     margin-bottom: 2px;
+    color:#a9010a;
 }
 .menuTxt>h4{
+    color:#5d5b5b;
     font-weight: bold;
+    font-size: 12px;
     margin-top: 10px;
     margin-bottom: 7px;
 }
@@ -37,7 +47,9 @@ main#menupage{
     margin-bottom: 4px;
 }
 .menuTxt>button{
-    background-color: lime;
+    background-color: #e9e9ed;
+    border:solid 1px #8f8f9d;
+    border-radius: 4px;
 }
 .menuCard>span{
     width:50%;
@@ -48,4 +60,60 @@ main#menupage{
     width: 50%;
     height: 100%;
 }
+#podsumowaniePizzy{
+    display: flex;
+    padding-left:10%;
 
+    width: 100%;
+    height:100px;
+    background-color: rgb(56, 56, 55);
+    line-height: 100px;
+}
+#podsumowaniePizzy>span{
+    margin-right:10%;
+
+}
+#podsumowaniePizzy>button{
+    height:50%;
+    width:40%;
+    vertical-align:middle;
+    
+    
+}
+
+#creator>h3{
+    text-align: center;
+}
+#creator>.row{
+    width:90vw;
+    height:50px;
+    border-radius: 10px;
+    border:solid 1px grey;
+    margin:auto;
+    font-size: 1em;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-style:italic;
+
+}
+.row>.IngredientQ{
+    float: right;
+    margin-right: 5vw;
+    font-style: normal;
+}
+.row>.IngredientP{
+    float: left;
+    margin-left:15px;
+    margin-right: 5vw;
+}
+.row>.Ingredient{
+   
+    margin-left: 5Zpx;
+}
+.row>img{
+    height:100%;
+    float: right;
+}
+.row>span{
+    line-height:50px ;
+}

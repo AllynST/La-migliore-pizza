@@ -1,6 +1,7 @@
 daily();
 let landingPage = document.getElementById("landingPage");
 let menuPage = document.getElementById("menuPage");
+let creatorEl = document.getElementById("creator");
 function daily() {
 
   let container = document.getElementById("dateBox");
@@ -27,12 +28,19 @@ function menu(){
   
   menuPage.style.display = 'block';
   landingPage.style.display = 'none';
+  creatorEl.style.display="none"
 
 }
 function home(){
   
   menuPage.style.display = 'none';
   landingPage.style.display = 'block';
+  creatorEl.style.display="none"
+}
+function creator(){
+  menuPage.style.display = 'none';
+  landingPage.style.display = 'none';
+  creatorEl.style.display="block";
 }
 
 console.log( document.getElementsByClassName('pizzaofchoice'))
