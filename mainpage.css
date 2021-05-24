@@ -4,10 +4,10 @@ body{
     background-image: url('background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: Myriad;
+    font-family: Nunito;
 }
 @font-face {
-    font-family: Myriad;
+    font-family: Nunito;
     src: url(font.ttf);
 }
 nav{
@@ -35,7 +35,7 @@ nav>img{
 main#landingpage{
     display:grid;
     grid-template-columns:20% 20% 20% 20% 20%;
-    grid-template-rows:300px auto auto auto 450px;
+    grid-template-rows:300px auto auto auto 450px auto;
 
     grid-template-areas: 
     "carousel carousel carousel carousel carousel"
@@ -58,6 +58,17 @@ main#landingpage{
     margin-bottom: 40px;
     
 
+}
+.separator{
+    height:40vw;
+    width:100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.separator>img{
+    width:100%;
+    height:100%;
 }
 
 #carousel{
@@ -82,18 +93,15 @@ main#landingpage{
     height:100%;
     
 }
-.apla{
-    background:#383837;
-    color:white;
-    
-    
-    font-size: 6vw;   
-    padding:1vh;
+hr{
+    width:25%;
+    color: black;
+    margin-top: 30px;
 }
 #location{
     grid-area: location;
 
-    background-color: #383837;
+    
     text-align: center;    
     width: 100%;
 }
@@ -101,6 +109,7 @@ main#landingpage{
 
     width: 100%;
     height: 60%;
+    margin-top: 20px;
     border-left: 0px;
     border-right: 0px;
     border: solid 1px black ;
@@ -114,11 +123,13 @@ main#landingpage{
     width:100%;
     justify-self: stretch;
     padding-bottom: 20px;
+    margin-top: 20px;
     
 
 }
 #location>h2{
-    color:white;
+    margin-bottom: 15px;
+    
 }
 #cards{
     display: flex;
@@ -136,7 +147,7 @@ main#landingpage{
     position: relative;
     width:250px;
     height:260px;
-    border:2px solid black;
+    border:2px solid #8c8277;
 }
 .card>img{
     width:100%;
@@ -152,7 +163,7 @@ main#landingpage{
     background-color: #e3e3e3;
     border-radius: 5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border-color:#e1930f;
+    border:solid 2px #8c8277;
 
 }
 .card>button:hover{
@@ -166,6 +177,7 @@ main#landingpage{
 
 #daily{
     grid-area: daily;
+    text-align: center;
 }
 #aboutus{
     grid-area:aboutus;
@@ -178,7 +190,7 @@ p{
     margin-left:15px;
     margin-right:15px ;
     text-align: justify; */
-
+    
 }
 
 
