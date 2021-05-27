@@ -51,6 +51,7 @@ main#creator{
     font-weight: bold;
     font-style:italic;
 
+
 }
 .row>.IngredientQ{
     float: right;
@@ -67,8 +68,9 @@ main#creator{
     margin-left: 5Zpx;
 }
 .row>img{
-    height:100%;
+    height: 80%;
     float: right;
+    margin-right: 10px;
 }
 .row>span{
     line-height:50px ;

@@ -11,41 +11,54 @@ function daily() {
   let dayNum = d.getDate();
 
   let days = ["Niedziela","Poniedziałek","Wtorek","Środa","Czwartek","Piątek","Sobota"];
-  let month = ["Styczeń","Luty","Marzec","Kwiecień","Maj","Czerwiec","Lipiec","Wrzesień","Październik","Listopad","Grudzień"]
+  let month = ["Styczeń","Luty","Marzec","Kwiecień","Maj","Czerwiec","Lipiec","Wrzesień","Październik","Listopad","Grudzień"];
 
   let final =  days[d.getDay()]+" " +dayNum +" "+month[d.getMonth()]+" "+d.getFullYear();
   container.innerHTML = final;
 
-  let PizzaOfTheDayImage = document.getElementById("")
-  switch(dayNum){
-    case 0 : //Niedziela
-      PizzaOfTheDayImage.src = "Niedziela.jpg"
+  let PizzaOfTheDayImage = document.getElementById("pizzaOfTheDayImage")
+  let PizzaOfTheDayName = document.getElementById("pizzaOfTheDayName")
+  let PizzaOfTheDayPrice = document.getElementById("pizzaOfTheDayPrice")
+
+  switch(d.getDay()){
+    case 0 : //Niedziela    
+      PizzaOfTheDayImage.src = "Niedziela.gif"
+      PizzaOfTheDayName.innerHTML = 'Margerita'
+      PizzaOfTheDayPrice.innerHTML = '24 zł'
     break;
     case 1 : //Poniedziałek
-      PizzaOfTheDayImage.src = "Poniedziałek.jpg"
+      PizzaOfTheDayImage.src = "Poniedziałek.gif"
+      PizzaOfTheDayName.innerHTML = 'Margerita'
+      PizzaOfTheDayPrice.innerHTML = '24 zł'
     break;
     case 2 : //Wtorek
-      PizzaOfTheDayImage.src = "Wtorek.jpg"
+      PizzaOfTheDayImage.src = "Wtorek.gif"
+      PizzaOfTheDayName.innerHTML = 'Margerita'
+      PizzaOfTheDayPrice.innerHTML = '24 zł'
     break;
     case 3 : //Środa
-      PizzaOfTheDayImage.src = "Środa.jpg"
+      PizzaOfTheDayImage.src = "Środa.gif"
+      PizzaOfTheDayName.innerHTML = 'Margerita'
+      PizzaOfTheDayPrice.innerHTML = '24 zł'
     break;
     case 4 : //Czwartek
-      PizzaOfTheDayImage.src = "Czwartek.jpg"
+      PizzaOfTheDayImage.src = "Czwartek.gif"
+      PizzaOfTheDayName.innerHTML = 'Margerita'
+      PizzaOfTheDayPrice.innerHTML = '24 zł'
     break;
     case 5 : //Piątek
-      PizzaOfTheDayImage.src = "Piątek.jpg"
+      
+      PizzaOfTheDayImage.src = "Piątek.gif"
+      PizzaOfTheDayName.innerHTML = 'Margerita'
+      PizzaOfTheDayPrice.innerHTML = '24 zł'
     break;
     case 6 : //Sobota
-      PizzaOfTheDayImage.src = "Sobota.jpg"
+      PizzaOfTheDayImage.src = "Sobota.gif"
+      PizzaOfTheDayName.innerHTML = 'Margerita'
+      PizzaOfTheDayPrice.innerHTML = '24 zł'
     break;
+
   }
-
-  
-
-
-
-
 }
 function about(){
   let aboutUs = document.getElementById("aboutus")
