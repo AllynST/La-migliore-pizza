@@ -1,0 +1,75 @@
+main#creator{
+    padding-bottom: 50px;
+    
+}
+#creatorUpper{
+    height:50px;
+    width:100%;   
+    display: flex;
+    justify-content:space-around;
+    background-color: rgb(56, 56, 55);
+    line-height: 50px;
+    color:white;
+    font-size: 5vw;
+    
+}
+.sticky{
+    position: fixed;
+    top: 0;
+ 
+}
+
+#creatorBottom{
+    height:50px;
+    width:100%;
+    position:fixed;
+    bottom:0px;
+    display: flex;
+    justify-content:space-around;
+    background-color: rgb(56, 56, 55);
+    line-height: 50px;
+    color:white;
+    font-size: 5vw;
+    
+}
+
+#creator>h3{
+    text-align: center;
+}
+#ingContainer{
+    padding-top:10px
+}
+
+#creator>#ingContainer>.row{
+    width:90vw;
+    height:50px;
+    border-radius: 10px;
+    border:solid 1px grey;
+    margin:auto;
+    font-size: 1em;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-style:italic;
+
+}
+.row>.IngredientQ{
+    float: right;
+    margin-right: 5vw;
+    font-style: normal;
+}
+.row>.IngredientP{
+    float: left;
+    margin-left:15px;
+    margin-right: 5vw;
+}
+.row>.Ingredient{
+   
+    margin-left: 5Zpx;
+}
+.row>img{
+    height:100%;
+    float: right;
+}
+.row>span{
+    line-height:50px ;
+}
