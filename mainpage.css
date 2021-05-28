@@ -13,6 +13,7 @@ body{
 }
 nav{
     display:flex;
+    justify-content: space-evenly;
     grid-area: navbar;
    
 background-color: rgb(56, 56, 55);
@@ -95,11 +96,7 @@ main#landingpage{
     height:100%;
     
 }
-hr{
-    width:25%;
-    color: black;
-    margin-top: 30px;
-}
+
 #location{
     grid-area: location;
 
@@ -189,38 +186,6 @@ footer{
 }
 
 
-@media screen and (min-width: 1200px) {
-    
-    #main {
-        
-        width:1200px;
-    }
-    #carousel{
-        height:600px;
-    }
-    .carouselIT>img{
-        width: 100%;
-        height:700px;
-    }
-  }
-
- 
-
-
-/* MEDIAPORTODODES */
-
-
-
-
-
-
-
-
-
-
-
-
-
 @keyframes carousel{
 
 0%{
@@ -265,8 +230,5 @@ footer{
 100%{
     right:0%;
 }
-
-
-
 
 }

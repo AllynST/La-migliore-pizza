@@ -1,13 +1,10 @@
-main#menupage{
+main#menuPage{
+    display:block;
 
-    display: flex;
-    
-
-    margin:auto; 
     overflow: hidden; 
 
 
-    width:100vw;
+    width:100%;
     background-color: #dfdfdf;
     text-align: center;    
 }
@@ -18,17 +15,19 @@ main#menupage{
     
  
 }
+#menuCards{
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 
+}
 .menuCard{
     display:flex;
     background-color: #dfd1c5;
     border:solid 2px rgb(172, 172, 172);
-    border-left: 0px;
-    border-right: 0px;
     height:170px;
-    
-    /* margin-left:2px;
-    margin-right:2px; */
+    width:100%;
     margin-bottom: 5px;
     padding:0px;
 }

@@ -4,6 +4,8 @@ let menuPage = document.getElementById("menuPage");
 let creatorEl = document.getElementById("creator");
 function daily() {
 
+  //pobieranie aktualnej daty 
+
   let container = document.getElementById("dateBox");
 
 
@@ -16,10 +18,14 @@ function daily() {
   let final =  days[d.getDay()]+" " +dayNum +" "+month[d.getMonth()]+" "+d.getFullYear();
   container.innerHTML = final;
 
+   //Zmiana pizzy dnia na podstawie aktualnego dnia
+
   let PizzaOfTheDayImage = document.getElementById("pizzaOfTheDayImage")
   let PizzaOfTheDayName = document.getElementById("pizzaOfTheDayName")
   let PizzaOfTheDayPrice = document.getElementById("pizzaOfTheDayPrice")
 
+
+ 
   switch(d.getDay()){
     case 0 : //Niedziela    
       PizzaOfTheDayImage.src = "Niedziela.gif"
@@ -60,6 +66,8 @@ function daily() {
 
   }
 }
+
+//Funkcje nawigujące po stronie na podstawie display = block/none;
 function about(){
   let aboutUs = document.getElementById("aboutus")
   let aboutUsOfset = aboutUs.offsetTop
@@ -89,7 +97,7 @@ function home(){
   window.scrollTo(0,0);
   
   menuPage.style.display = 'none';
-  landingPage.style.display = 'block';
+  landingPage.style.display = 'grid';
   creatorEl.style.display="none"
 }
 function creator(){
@@ -157,13 +165,18 @@ function updatePrice(){
   document.getElementById("ingP").innerHTML = finalPrice+"zł"
 }
 
-window.onscroll = function(){
+
+
+///------------------------------------------------////
+// Dodawanie klasy z position fixed by informacja o ilości składników 
+//była cały czas na ekranie
+
+window.onscroll = () =>{
   stickyBar();
 };
 
 let upperbar = document.getElementById("creatorUpper");
 let sticky = 100;
-
 
 function stickyBar() {
   if (window.pageYOffset >= sticky) {
@@ -174,7 +187,8 @@ function stickyBar() {
 }
 
 
-window.scrollTo(0,0);
+window.scrollTo(0,0); 
+// w celu naprawienia błędu scrolowania w przeglądare chrome
 
 
 

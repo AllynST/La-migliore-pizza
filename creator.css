@@ -1,5 +1,6 @@
 main#creator{
     padding-bottom: 50px;
+    background-color: transparent;
     
 }
 #creatorUpper{
@@ -41,7 +42,7 @@ main#creator{
 }
 
 #creator>#ingContainer>.row{
-    width:90vw;
+    width:90%;
     height:50px;
     border-radius: 10px;
     border:solid 1px grey;
