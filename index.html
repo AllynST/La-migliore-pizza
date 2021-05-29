@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mainpage.css">
-    <link rel="stylesheet" href="creator.css">
-    <link rel="stylesheet" href="menupage.css">
-    <link rel="stylesheet" href="mediaports.css">
-   
-    
-    
+    <link rel="stylesheet" href="stylesheets/mainpage.css">
+    <link rel="stylesheet" href="stylesheets/creator.css">
+    <link rel="stylesheet" href="stylesheets/menupage.css">
+    <link rel="stylesheet" href="stylesheets/mediaports.css">
+
+
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -20,13 +20,14 @@
 <!-- <body onload="onLoad()"> -->
 
 <body onload="home()">
+    <img src="images/background.jpg" alt="" id="background">
     <div id="pageWrapper">
 
         <!-- Nawigacja -->
         <nav>
-            <img src="logo.png" alt="LOGO HERE" srcset="">
+            <img src="images/logo.png" alt="LOGO HERE" srcset="">
             <a href="#" onClick="home()">Home</a>
-            <a href="#" onClick="about()">About</a>
+            <a href="#" onClick="about()">O nas</a>
             <a href="#" onClick="menu()">Menu</a>
         </nav>
 
@@ -37,16 +38,16 @@
             <div id="carousel">
 
                 <div class="carouselIt">
-                    <img src="carousel1.jpg" alt="">
+                    <img src="images/carousel1.jpg" alt="">
                 </div>
                 <div class="carouselIt">
-                    <img src="carousel2.jpg" alt="">
+                    <img src="images/carousel2.jpg" alt="">
                 </div>
                 <div class="carouselIt">
-                    <img src="carousel3.jpg" alt="">
+                    <img src="images/carousel3.jpg" alt="">
                 </div>
                 <div class="carouselIt">
-                    <img src="carousel4.jpg" alt="">
+                    <img src="images/carousel4.jpg" alt="">
                 </div>
 
             </div>
@@ -68,55 +69,97 @@
 
             <!-- Promocje -->
             <div id="promocje">
-                <b><h2>Aktualne promocje</h2></b>
-                <p>Każdy znajdzie coś dla siebie</p>
-               
-                
+                <b>
+                    <h2 class="headers">Aktualne promocje</h2>
+                </b>
+                <p><span class="bottomBorder">Każdy znajdzie coś dla siebie</span></p>
+
+
 
 
                 <div id="cards">
                     <div class="card">
 
-                        <img src="margerita.jpg" alt="" class="" srcset="">
+                        <img src="images/Margerita.jpg" alt="" class="" srcset="">
                         <p>Margerita średnia</p>
-                        <p>27 zł</p>
-                        <button>Order Now</button>
+                        <p><span class="crossed">32 zł</span> 27 zł</p>
+                        <button>Zamów teraz</button>
 
 
                     </div>
 
                     <div class="card">
 
-                        <img src="random pizza.jpg" alt="" class="" srcset="">
+                        <img src="images/Hawajska.jpg" alt="" class="" srcset="">
+                        <p>Hawajska mega</p>
+                        <p><span class="crossed">60 zł</span> 45 zł</p>
+                        <button>Zamów teraz</button>
+
+
+                    </div>
+
+                    <div class="card">
+
+                        <img src="images/Capri.jpg" alt="" class="" srcset="">
+                        <p>Capri średnia</p>
+                        <p><span class="crossed">40 zł</span> 32 zł</p>
+                        <button>Zamów teraz</button>
+
+
+                    </div>
+
+                    <div class="card">
+
+                        <img src="images/Salame.jpg" alt="" class="" srcset="">
+                        <p>Salame średnia</p>
+                        <p><span class="crossed">35 zł</span> 30 zł</p>
+                        <button>Zamów teraz</button>
+
+
+                    </div>
+
+                    <div class="card">
+
+                        <img src="images/Kebabowa.jpg" alt="" class="" srcset="">
+                        <p>Kebabowa duża</p>
+                        <p><span class="crossed">45 zł</span> 38 zł</p>
+                        <button>Zamów teraz</button>
+
+
+                    </div>
+
+                    <div class="card">
+
+                        <img src="images/Losowa.jpg" alt="" class="" srcset="">
                         <p>Losowa pizza</p>
-                        <p>25 zł</p>
-                        <button>Order Now</button>
+                        <p>Zdaj się na los z rabatem 20%</p>
+                        <button>Zamów teraz</button>
 
 
                     </div>
 
                 </div>
 
-                
+
             </div>
             <!-- Promocje -->
 
 
 
             <!-- Pizza Dnia -->
-            
+
             <div id="Daily">
                 <div class="separator">
-                    <img src="separator1.jpg" alt="">
+                    <img src="images/separator1.jpg" alt="">
                 </div>
-    
 
-                <h2>Pizza dnia!</h2>
-                <p id="dateBox"></p>
-                
+
+                <h2 class="headers">Pizza dnia!</h2>
+                <p><span id="dateBox" class="bottomBorder"></span></p>
+
                 <div class="card">
 
-                    <img id="pizzaOfTheDayImage" src="margerita.jpg" alt="" class="" srcset="">
+                    <img id="pizzaOfTheDayImage" src="" alt="Pizza of the day" class="" srcset="">
                     <p id="pizzaOfTheDayName">Margerita średnia</p>
                     <p id="pizzaOfTheDayPrice">37 zł</p>
                     <button>Order Now</button>
@@ -134,12 +177,18 @@
 
             <div id="aboutus">
                 <div class="separator">
-                    <img src="separator2.jpg" alt="">
+                    <img src="images/separator2.jpg" alt="">
                 </div>
 
 
-                <h2 class="headers">Kilka słów o nas</h2>
-                
+                <h2 class="headers"><span class="bottomBorder">Kilka słów o nas</span></h2>
+                <p>W Pizzeriach Tivoli najważniejsza jest dla nas atmosfera i smak – staramy się, by każdy gość poczuł
+                    klimat słonecznej Italii, a potrawy smakowały jak u Mammy!
+
+                    Zapraszamy do naszych ciepłych, rustykalnych wnętrz. Jeżeli nie macie czasu, aby rozkoszować się
+                    nastrojem naszych pizzerii a macie ochotę na pyszne jedzenie możecie je u nas zamówić – przez
+                    telefon lub Internet.</p>
+
 
             </div>
 
@@ -147,35 +196,103 @@
 
 
             <!-- kontakt i lokalizacja -->
-            
+
             <div id="location">
 
                 <div class="separator">
-                    <img src="separator3.jpg" alt="">
+                    <img src="images/separator3.jpg" alt="">
                 </div>
 
                 <h2 class="headers">Nasza Lokalizacja</h2>
-                <p>Zapraszamy do jednego z wielu lokali</p>
-               
-
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20482.664561883877!2d20.032856804233255!3d50.08005062126778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471645a475bcda15%3A0xe287476a3ad5cf1!2sKopiec%20Wandy!5e0!3m2!1spl!2spl!4v1620320821263!5m2!1spl!2spl"
-                    allowfullscreen="" loading="lazy">
-                </iframe>
+                <p><span class="bottomBorder">Zapraszamy do naszych lokali</span></p>
+                <div class="locationWrapper">
 
 
-            </div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20482.664561883877!2d20.032856804233255!3d50.08005062126778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471645a475bcda15%3A0xe287476a3ad5cf1!2sKopiec%20Wandy!5e0!3m2!1spl!2spl!4v1620320821263!5m2!1spl!2spl"
+                            allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="adress">
+                        <h3>Kontakt i adres:</h3>
+                        <ul>
+                            <li>Ul, Tadeusza Ptaszyckiego 4, </li>
+                            <li>30-979 Kraków</li>
+                            <li> 999 888 777</li>
+                        </ul>
+                        <h3>Godziny otwarcia:</h3>
+                        <ul>
 
-            <div id="contact">
-                <h2></h2>
+                            <li>Poniedziałek 8.00-20.00</li>
+                            <li>Wtorek 8.00-20.00</li>
+                            <li>Środa 8.00-20.00</li>
+                            <li>Czwartek 8.00-20.00</li>
+                            <li>Piątek8.00-20.00</li>
+                            <li>Sobota 10.00-18.00</li>
+                            <li>Niedziela <span style="color:red;">zamknięte</span></li>
+                        </ul>
+
+                    </div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20482.664561883877!2d20.032856804233255!3d50.08005062126778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471645a475bcda15%3A0xe287476a3ad5cf1!2sKopiec%20Wandy!5e0!3m2!1spl!2spl!4v1620320821263!5m2!1spl!2spl"
+                            allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="adress">
+                        <h3>Kontakt i adres:</h3>
+                        <ul>
+                            <li>Ul, Powstania Warszawskiego 7</li>
+                            <li>31-999 Kraków</li>
+                            <li>111 222 333</li>
+                        </ul>
+                        <h3>Godziny otwarcia:</h3>
+                        <ul>
+
+                            <li>Poniedziałek 8.00-20.00</li>
+                            <li>Wtorek 8.00-20.00</li>
+                            <li>Środa 8.00-20.00</li>
+                            <li>Czwartek 8.00-20.00</li>
+                            <li>Piątek8.00-20.00</li>
+                            <li>Sobota 10.00-20.00</li>
+                            <li>Niedziela <span style="color:red;">zamknięte</span></li>
+
+                        </ul>
+
+                    </div>
 
 
+
+
+
+                </div>
             </div>
 
             <!-- kontakt i lokalizacja -->
 
-            <footer></footer>
+            <footer>
 
+                <div>
+                    <h3>Kontakt:</h3>
+                    <p>E-mail:</p>
+                    <p>thebestpizzaintheword@margerita.com</p>
+                    <p>Nr. Telefonu:</p>
+                    <p>889007779</p>
+                </div>
+                <div>
+                    <h3>Adres centrali:</h3>
+                    <p>ul. Powstania Marcowego 13</p>
+                    <p>31-506 Kraków</p>
+                </div>
+                <div>
+                    <h3>Media społecznościowe:</h3>
+                    <p><a href="pyszne.com/thebestpizza">pyszne.com/thebestpizza</a></p>
+                    <p><a href="facebook.com/thebestpizza">facebook.com/thebestpizza</a></p>
+                    
+                </div>
+                &copy;2021 Tomasz Rożnowski Web Development
+            </footer>
 
         </main>
 
@@ -184,10 +301,10 @@
 
             <!-- Menu -->
             <h2>Menu</h2>
-            <p>Każdy znajdzie coś dla siebie w naszej szerokiej ofercie!</p>
-            
-            
-        
+            <p><span class="bottomBorder">Dla każdego coś dobrego!</span></p>
+
+
+
             <div id="menuCards">
                 <div class='menuCard'>
                     <span class="menuTxt">
@@ -200,10 +317,10 @@
                             <option value="mercedes">Duża 50cm</option>
                             <option value="audi">Mega 60cm</option>
                         </select>
-                          <button>Dodaj do koszyka</button>
-                
+                        <button>Dodaj do koszyka</button>
+
                     </span>
-                    <img src="margerita.jpg" alt="">
+                    <img src="images/Margerita.jpg" alt="">
                 </div>
                 <div class='menuCard'>
                     <span class="menuTxt">
@@ -216,10 +333,10 @@
                             <option value="mercedes">Duża 50 cm</option>
                             <option value="audi">Mega 60 cm</option>
                         </select>
-                          <button>Dodaj do koszyka</button>
-                
+                        <button>Dodaj do koszyka</button>
+
                     </span>
-                    <img src="Funghi.jpg" alt="">
+                    <img src="images/Funghi.jpg" alt="">
                 </div>
                 <div class='menuCard'>
                     <span class="menuTxt">
@@ -232,10 +349,10 @@
                             <option value="mercedes">Duża 50 cm</option>
                             <option value="audi">Mega 60 cm</option>
                         </select>
-                          <button>Dodaj do koszyka</button>
-                
+                        <button>Dodaj do koszyka</button>
+
                     </span>
-                    <img src="Salami.png" alt="">
+                    <img src="images/Salami.jpg">
                 </div>
                 <div class='menuCard'>
                     <span class="menuTxt">
@@ -248,10 +365,10 @@
                             <option value="mercedes">Duża 50 cm</option>
                             <option value="audi">Mega 60 cm</option>
                         </select>
-                          <button>Dodaj do koszyka</button>
-                
+                        <button>Dodaj do koszyka</button>
+
                     </span>
-                    <img src="Primavera.png" alt="">
+                    <img src="images/Primavera.jpg" alt="">
                 </div>
                 <div class='menuCard'>
                     <span class="menuTxt">
@@ -264,220 +381,253 @@
                             <option value="mercedes">Duża 50 cm</option>
                             <option value="audi">Mega 60 cm</option>
                         </select>
-                          <button>Dodaj do koszyka</button>
-                
+                        <button>Dodaj do koszyka</button>
+
                     </span>
-                    <img src="Capri.png" alt="">
+                    <img src="images/Capri.jpg" alt="">
                 </div>
                 <div class='menuCard'>
                     <span class="menuTxt">
                         <h3>Twoja własna pizza </h3>
                         <h4>Wybierz swoje skladniki</h4>
                         <h4>od 12 zł</h4>
-                
+
                         <button onclick="creator();">skomponuj</button>
-                
+
                     </span>
-                    <img src="Capri.png" alt="">
+                    <img src="images/Losowa.jpg" alt="">
                 </div>
             </div>
-       
+
             
-    <!-- Menu -->
+            
+        <footer>
+
+            <div>
+                <h3>Kontakt:</h3>
+                <p>E-mail:</p>
+                <p>thebestpizzaintheword@margerita.com</p>
+                <p>Nr. Telefonu:</p>
+                <p>889007779</p>
+            </div>
+            <div>
+                <h3>Adres centrali:</h3>
+                <p>ul. Powstania Marcowego 13</p>
+                <p>31-506 Kraków</p>
+            </div>
+            <div>
+                <h3>Media społecznościowe:</h3>
+                <p><a href="pyszne.com/thebestpizza">pyszne.com/thebestpizza</a></p>
+                <p><a href="facebook.com/thebestpizza">facebook.com/thebestpizza</a></p>
+                
+            </div>
+            &copy;2021 Tomasz Rożnowski Web Development
+        </footer>
+
+            <!-- Menu -->
         </main>
         <main id="creator">
 
-            
 
-            <div id="creatorUpper">
-                <span style="font-weight: bold;">Twoja Pizza</span>
-                <span>Ilość Składników : <span id="ingQ"></span></span>
+
+            <div class="row">
+                <div id="creatorUpper">
+                    <span style="font-weight: bold;">Twoja Pizza</span>
+                    <span>Ilość Składników : <span id="ingQ"></span></span>
+                </div>
             </div>
 
             <div id="ingContainer">
-            
-            <div class="row">
-                <span class="Ingredient">Ser pleśniowy</span>
-                <span class="IngredientP">4 zł</span>
-                
-                <img src="minus.png"  onclick ="Ing(0,'subtract')" alt="">
-                <img src="plus.png"   onclick ="Ing(0,'add')" alt="">
-                <span class="IngredientQ">x0</span>
-               
-            </div>
-            <div class="row">
-                <span class="Ingredient">Ser żółty</span>
-                <span class="IngredientP">2 zł</span>
-                
-                <img src="minus.png"  onclick ="Ing(1,'subtract')" alt="">
-                <img src="plus.png"   onclick ="Ing(1,'add')" alt="">
-                <span class="IngredientQ">x0</span>
-               
-            </div>
-            <div class="row">
-                <span class="Ingredient">Ser Lazur</span>
-                <span class="IngredientP">3 zł</span>
-                
-                <img src="minus.png"  onclick ="Ing(2,'subtract')" alt="">
-                <img src="plus.png"   onclick ="Ing(2,'add')" alt="">
-                <span class="IngredientQ">x0</span>
-               
-            </div>
-            <div class="row">
-                <span class="Ingredient">Ser Gorgonzola</span>
-                <span class="IngredientP">4 zł</span>
-                
-                <img src="minus.png"  onclick ="Ing(3,'subtract')" alt="">
-                <img src="plus.png"   onclick ="Ing(3,'add')" alt="">
-                <span class="IngredientQ">x0</span>
-               
-            </div>
-            <div class="row">
-                <span class="Ingredient">Cebula</span>
-                <span class="IngredientP">1 zł</span>
-                
-                <img src="minus.png"  onclick ="Ing(4,'subtract')" alt="">
-                <img src="plus.png"   onclick ="Ing(4,'add')" alt="">
-                <span class="IngredientQ">x0</span>
-               
-            </div>
-            <div class="row">
-                <span class="Ingredient">Szynka</span>
-                <span class="IngredientP">2 zł</span>
-                
-                <img src="minus.png"  onclick ="Ing(5,'subtract')" alt="">
-                <img src="plus.png"   onclick ="Ing(5,'add')" alt="">
-                <span class="IngredientQ">x0</span>
-               
-            </div>
-            <div class="row">
-                <span class="Ingredient">Kurczak</span>
-                <span class="IngredientP">4 zł</span>
-                
-                <img src="minus.png"  onclick ="Ing(6,'subtract')" alt="">
-                <img src="plus.png"   onclick ="Ing(6,'add')" alt="">
-                <span class="IngredientQ">x0</span>
-               
-            </div>
-            <div class="row">
-                <span class="Ingredient">Łosoś wędzony</span>
-                <span class="IngredientP">3 zł</span>
-                
-                <img src="minus.png"  onclick ="Ing(7,'subtract')" alt="">
-                <img src="plus.png"   onclick ="Ing(7,'add')" alt="">
-                <span class="IngredientQ">x0</span>
-               
-            </div>
-            <div class="row">
-                <span class="Ingredient">Tuńczyk</span>
-                <span class="IngredientP">3 zł</span>
-                
-                <img src="minus.png"  onclick ="Ing(8,'subtract')" alt="">
-                <img src="plus.png"   onclick ="Ing(8,'add')" alt="">
-                <span class="IngredientQ">x0</span>
-               
-            </div>
-            <div class="row">
-                <span class="Ingredient">Małże</span>
-                <span class="IngredientP">3 zł</span>
-                
-                <img src="minus.png"  onclick ="Ing(9,'subtract')" alt="">
-                <img src="plus.png"   onclick ="Ing(9,'add')" alt="">
-                <span class="IngredientQ">x0</span>
-               
-            </div>
-            <div class="row">
-                <span class="Ingredient">Krewetki</span>
-                <span class="IngredientP">3 zł</span>
-                
-                <img src="minus.png"  onclick ="Ing(10,'subtract')" alt="">
-                <img src="plus.png"   onclick ="Ing(10,'add')" alt="">
-                <span class="IngredientQ">x0</span>
-               
-            </div>
-            <div class="row">
-                <span class="Ingredient">Szpinak</span>
-                <span class="IngredientP">3 zł</span>
-                
-                <img src="minus.png"  onclick ="Ing(11,'subtract')" alt="">
-                <img src="plus.png"   onclick ="Ing(11,'add')" alt="">
-                <span class="IngredientQ">x0</span>
-               
-            </div>
-            <div class="row">
-                <span class="Ingredient">Bekon</span>
-                <span class="IngredientP">3 zł</span>
-                
-                <img src="minus.png"  onclick ="Ing(12,'subtract')" alt="">
-                <img src="plus.png"   onclick ="Ing(12,'add')" alt="">
-                <span class="IngredientQ">x0</span>
-               
-            </div>
-            <div class="row">
-                <span class="Ingredient">Ananas</span>
-                <span class="IngredientP">2 zł</span>
-                
-                <img src="minus.png"  onclick ="Ing(13,'subtract')" alt="">
-                <img src="plus.png"   onclick ="Ing(13,'add')" alt="">
-                <span class="IngredientQ">x0</span>
-               
-            </div>
-            <div class="row">
-                <span class="Ingredient">Oliwki</span>
-                <span class="IngredientP">2 zł</span>
-                
-                <img src="minus.png"  onclick ="Ing(14,'subtract')" alt="">
-                <img src="plus.png"   onclick ="Ing(14,'add')" alt="">
-                <span class="IngredientQ">x0</span>
-               
-            </div>
-            <div class="row">
-                <span class="Ingredient">Kabanos</span>
-                <span class="IngredientP">2 zł</span>
-                
-                <img src="minus.png"  onclick ="Ing(15,'subtract')" alt="">
-                <img src="plus.png"   onclick ="Ing(15,'add')" alt="">
-                <span class="IngredientQ">x0</span>
-               
-            </div>
-            <div class="row">
-                <span class="Ingredient">Salami</span>
-                <span class="IngredientP">4 zł</span>
-                
-                <img src="minus.png"  onclick ="Ing(16,'subtract')" alt="">
-                <img src="plus.png"   onclick ="Ing(16,'add')" alt="">
-                <span class="IngredientQ">x0</span>
-               
-            </div>
-            <div class="row">
-                <span class="Ingredient">Kukurydza</span>
-                <span class="IngredientP">1 zł</span>
-                
-                <img src="minus.png"  onclick ="Ing(17,'subtract')" alt="">
-                <img src="plus.png"   onclick ="Ing(17,'add')" alt="">
-                <span class="IngredientQ">x0</span>
-               
-            </div>
-            <div class="row">
-                <span class="Ingredient">Pieczarki</span>
-                <span class="IngredientP">2 zł</span>
-                
-                <img src="minus.png"  onclick ="Ing(18,'subtract')" alt="">
-                <img src="plus.png"   onclick ="Ing(18,'add')" alt="">
-                <span class="IngredientQ">x0</span>
-               
-            </div>
-        </div>
 
-            <div id="creatorBottom">
-                <span>Cena:<span id="ingP">0</span></span>
-                <button>Zamów teraz!</button>
+                <div class="row">
+                    <span class="Ingredient">Ser pleśniowy</span>
+                    <span class="IngredientP">4 zł</span>
+
+                    <img src="images/minus.png" onclick="Ing(0,'subtract')" alt="">
+                    <img src="images/plus.png" onclick="Ing(0,'add')" alt="">
+                    <span class="IngredientQ">x0</span>
+
+                </div>
+                <div class="row">
+                    <span class="Ingredient">Ser żółty</span>
+                    <span class="IngredientP">2 zł</span>
+
+                    <img src="images/minus.png" onclick="Ing(1,'subtract')" alt="">
+                    <img src="images/plus.png" onclick="Ing(1,'add')" alt="">
+                    <span class="IngredientQ">x0</span>
+
+                </div>
+                <div class="row">
+                    <span class="Ingredient">Ser Lazur</span>
+                    <span class="IngredientP">3 zł</span>
+
+                    <img src="images/minus.png" onclick="Ing(2,'subtract')" alt="">
+                    <img src="images/plus.png" onclick="Ing(2,'add')" alt="">
+                    <span class="IngredientQ">x0</span>
+
+                </div>
+                <div class="row">
+                    <span class="Ingredient">Ser Gorgonzola</span>
+                    <span class="IngredientP">4 zł</span>
+
+                    <img src="images/minus.png" onclick="Ing(3,'subtract')" alt="">
+                    <img src="images/plus.png" onclick="Ing(3,'add')" alt="">
+                    <span class="IngredientQ">x0</span>
+
+                </div>
+                <div class="row">
+                    <span class="Ingredient">Cebula</span>
+                    <span class="IngredientP">1 zł</span>
+
+                    <img src="images/minus.png" onclick="Ing(4,'subtract')" alt="">
+                    <img src="images/plus.png" onclick="Ing(4,'add')" alt="">
+                    <span class="IngredientQ">x0</span>
+
+                </div>
+                <div class="row">
+                    <span class="Ingredient">Szynka</span>
+                    <span class="IngredientP">2 zł</span>
+
+                    <img src="images/minus.png" onclick="Ing(5,'subtract')" alt="">
+                    <img src="images/plus.png" onclick="Ing(5,'add')" alt="">
+                    <span class="IngredientQ">x0</span>
+
+                </div>
+                <div class="row">
+                    <span class="Ingredient">Kurczak</span>
+                    <span class="IngredientP">4 zł</span>
+
+                    <img src="images/minus.png" onclick="Ing(6,'subtract')" alt="">
+                    <img src="images/plus.png" onclick="Ing(6,'add')" alt="">
+                    <span class="IngredientQ">x0</span>
+
+                </div>
+                <div class="row">
+                    <span class="Ingredient">Łosoś wędzony</span>
+                    <span class="IngredientP">3 zł</span>
+
+                    <img src="images/minus.png" onclick="Ing(7,'subtract')" alt="">
+                    <img src="images/plus.png" onclick="Ing(7,'add')" alt="">
+                    <span class="IngredientQ">x0</span>
+
+                </div>
+                <div class="row">
+                    <span class="Ingredient">Tuńczyk</span>
+                    <span class="IngredientP">3 zł</span>
+
+                    <img src="images/minus.png" onclick="Ing(8,'subtract')" alt="">
+                    <img src="images/plus.png" onclick="Ing(8,'add')" alt="">
+                    <span class="IngredientQ">x0</span>
+
+                </div>
+                <div class="row">
+                    <span class="Ingredient">Małże</span>
+                    <span class="IngredientP">3 zł</span>
+
+                    <img src="images/minus.png" onclick="Ing(9,'subtract')" alt="">
+                    <img src="images/plus.png" onclick="Ing(9,'add')" alt="">
+                    <span class="IngredientQ">x0</span>
+
+                </div>
+                <div class="row">
+                    <span class="Ingredient">Krewetki</span>
+                    <span class="IngredientP">3 zł</span>
+
+                    <img src="images/minus.png" onclick="Ing(10,'subtract')" alt="">
+                    <img src="images/plus.png" onclick="Ing(10,'add')" alt="">
+                    <span class="IngredientQ">x0</span>
+
+                </div>
+                <div class="row">
+                    <span class="Ingredient">Szpinak</span>
+                    <span class="IngredientP">3 zł</span>
+
+                    <img src="images/minus.png" onclick="Ing(11,'subtract')" alt="">
+                    <img src="images/plus.png" onclick="Ing(11,'add')" alt="">
+                    <span class="IngredientQ">x0</span>
+
+                </div>
+                <div class="row">
+                    <span class="Ingredient">Bekon</span>
+                    <span class="IngredientP">3 zł</span>
+
+                    <img src="images/minus.png" onclick="Ing(12,'subtract')" alt="">
+                    <img src="images/plus.png" onclick="Ing(12,'add')" alt="">
+                    <span class="IngredientQ">x0</span>
+
+                </div>
+                <div class="row">
+                    <span class="Ingredient">Ananas</span>
+                    <span class="IngredientP">2 zł</span>
+
+                    <img src="images/minus.png" onclick="Ing(13,'subtract')" alt="">
+                    <img src="images/plus.png" onclick="Ing(13,'add')" alt="">
+                    <span class="IngredientQ">x0</span>
+
+                </div>
+                <div class="row">
+                    <span class="Ingredient">Oliwki</span>
+                    <span class="IngredientP">2 zł</span>
+
+                    <img src="images/minus.png" onclick="Ing(14,'subtract')" alt="">
+                    <img src="images/plus.png" onclick="Ing(14,'add')" alt="">
+                    <span class="IngredientQ">x0</span>
+
+                </div>
+                <div class="row">
+                    <span class="Ingredient">Kabanos</span>
+                    <span class="IngredientP">2 zł</span>
+
+                    <img src="images/minus.png" onclick="Ing(15,'subtract')" alt="">
+                    <img src="images/plus.png" onclick="Ing(15,'add')" alt="">
+                    <span class="IngredientQ">x0</span>
+
+                </div>
+                <div class="row">
+                    <span class="Ingredient">Salami</span>
+                    <span class="IngredientP">4 zł</span>
+
+                    <img src="images/minus.png" onclick="Ing(16,'subtract')" alt="">
+                    <img src="images/plus.png" onclick="Ing(16,'add')" alt="">
+                    <span class="IngredientQ">x0</span>
+
+                </div>
+                <div class="row">
+                    <span class="Ingredient">Kukurydza</span>
+                    <span class="IngredientP">1 zł</span>
+
+                    <img src="images/minus.png" onclick="Ing(17,'subtract')" alt="">
+                    <img src="images/plus.png" onclick="Ing(17,'add')" alt="">
+                    <span class="IngredientQ">x0</span>
+
+                </div>
+                <div class="row">
+                    <span class="Ingredient">Pieczarki</span>
+                    <span class="IngredientP">2 zł</span>
+
+                    <img src="images/minus.png" onclick="Ing(18,'subtract')" alt="">
+                    <img src="images/plus.png" onclick="Ing(18,'add')" alt="">
+                    <span class="IngredientQ">x0</span>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="creatorBottom">
+                    <span>Cena: <span id="ingP">0</span></span>
+                    <select id="creatorSize" onchange="updatePrice()">
+                        <option value="20">Mała 30 cm +20 zł</option>
+                        <option value="25">Średnia 40 cm+ 25 zł</option>
+                        <option value="40">Duża 50 cm +40 zł</option>
+                        <option value="45">Mega 60 cm +45 zł</option>
+                    </select>
+                    <button>Zamów teraz!</button>
+                </div>
             </div>
 
 
 
         </main>
-
 
 
 
@@ -500,7 +650,7 @@
 
 
     </div>
-    <script src="sketch.js"></script>
+    <script src="/scripts/sketch.js"></script>
 
 </body>
 

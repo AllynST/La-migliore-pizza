@@ -1,0 +1,291 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; */
+    font-family: Nunito;
+    user-select: none;
+}
+@font-face {
+    font-family: Nunito;
+    src: url(../font.ttf);
+}
+nav{
+    display:flex;
+    justify-content: space-evenly;
+    grid-area: navbar;
+   
+background-color: rgb(56, 56, 55);
+height:100px;
+}
+nav>a{
+    width:20%;
+    color:rgb(204, 204, 204);
+    font-size: 15px;
+    text-align: center;
+    
+    line-height: 100px;
+    height: 100%;
+    
+}
+nav>img{
+    width:40%;
+    height:100%;
+}
+.bottomBorder{
+    border:solid 2px black;
+    padding-bottom: 25px;
+   
+    border-top: 0px;
+    border-left: 0px;
+    border-right:0px;
+    margin-bottom: 15px;
+}
+
+
+main#landingpage{
+    display:grid;
+    grid-template-columns:20% 20% 20% 20% 20%;
+    grid-template-rows:300px auto auto auto auto auto;
+
+    grid-template-areas: 
+    "carousel carousel carousel carousel carousel"
+    "promotions promotions promotions promotions promotions"
+    "daily daily daily daily daily"   
+    "aboutus aboutus aboutus aboutus aboutus"
+    "location location location location location"
+    "footer footer footer footer footer";
+
+    margin:auto;
+    overflow: hidden;
+    width:100vw;
+    background-color: #dfdfdf    ;
+}
+.headers{
+    text-align: center;
+    margin-top:40px;
+    margin-bottom: 30px;
+    
+
+}
+#promocje>p,#daily>p,#location>p,#aboutus>p,#menuPage>p{
+    margin-bottom: 50px;
+}
+
+
+.separator{
+    height:50vw;
+    width:100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.separator>img{
+    width:100%;
+    height:100%;
+}
+
+#carousel{
+    grid-area:carousel;
+
+    width: 400%;
+    height:300px;
+    position:relative;
+    border-top:solid 1px black;
+    border-bottom:solid 1px black;
+    animation :carousel 40s infinite;
+    margin-bottom: 15px;
+    right:0%;
+}
+.carouselIT{
+    height:300px;
+    width:25%;
+    float:left;
+}
+.carouselIT>img{
+    width: 100%;
+    height:100%;
+    
+}
+
+#promocje{
+    text-align: center;
+    grid-area:promotions;
+    width:100%;
+    justify-self: stretch;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    
+
+}
+.crossed{
+    text-decoration: line-through;
+}
+
+#cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width:auto;
+
+}
+.card{
+    margin:auto;
+    background-color: #dfd1c5;
+    margin-top:30px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    
+    position: relative;
+    width:300px;
+    height:260px;
+    border:2px solid #8c8277;
+}
+.card>img{
+    width:100%;
+    height: 50%;
+}
+.card>p{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.card>button{
+
+    background-color: #e3e3e3;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border:solid 2px #8c8277;
+
+}
+.card>button:hover{
+
+    background-color: #e3e3e3;
+    opacity:0.5;
+    border-radius: 5px;
+
+}
+
+
+#daily{
+    text-align: center;
+    grid-area: daily;
+    width:100%;
+    
+}
+#daily>.card{
+    margin:auto;
+}
+#aboutus{
+    grid-area:aboutus;
+
+}
+
+#location{
+    grid-area: location;
+    text-align: center;
+
+
+    
+    width: 100%;
+}
+.locationWrapper{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+
+}
+#location .map{
+    width:500px;
+    height:500px;
+    margin-bottom: 30px;
+}
+#location .adress{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+   
+    width:500px;
+    height:500px;
+    margin-bottom: 30px;
+}
+#location iframe{
+
+    width: 100%;
+    height: 100%;
+    border: solid 1px black ;
+    box-shadow: grey 10px solid;
+
+}
+
+footer{
+    grid-area: footer;
+    background-color:rgb(56, 56, 55) ;
+    color:white;    
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+
+}
+footer a:link{
+    color:lightblue;
+
+}
+footer>div{
+    margin-left: 50px;
+    margin-right:50px;
+    width:225px;
+    margin-bottom: 10px;
+}
+
+
+@keyframes carousel{
+
+0%{
+    right:0%;
+}
+10%{
+    right:0%;
+}
+12%{
+    right:100%;
+}
+23%{
+    right:100%;
+}
+25%{
+    right:200%;
+}
+35%{
+    right:200%;
+}
+37%{
+    right:300%;
+}
+48%{
+    right:300%;
+}
+50%{
+    right:200%;
+}
+70%{
+    right:200%;
+}
+72%{
+    right:100%;
+}
+83%{
+    right:100%;
+}
+85%{
+    right:0%;
+}
+100%{
+    right:0%;
+}
+
+}
