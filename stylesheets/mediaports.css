@@ -60,6 +60,9 @@
         width: 100%;
         height:600px;
     }
+    #creatorBottom,#creatorUpper{
+        font-size: 24px;
+    }
     
 
 }

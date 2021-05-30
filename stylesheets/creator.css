@@ -11,7 +11,7 @@ main#creator{
     background-color: rgb(154 154 154);
     line-height: 50px;
     color:white;
-    font-size: 24px;
+    font-size: 13px;
     align-self: center;
     background-image: url('../images/stickyBarBCG.jpg');
     background-size: cover;
@@ -35,7 +35,7 @@ main#creator{
     background-color: rgb(154 154 154);
     line-height: 50px;
     color:white;
-    font-size: 27px;
+    font-size: 13px;
     
 }
 
