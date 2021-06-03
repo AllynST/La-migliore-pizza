@@ -47,6 +47,17 @@
 
 }
 @media (min-width: 992px) {
+    nav#desktop{
+        display:flex;
+
+    }
+    nav#mobile{
+        display:none;
+    }
+    div#expand{
+        display:none;
+        animation:none;
+    }
     main#landingPage {        
         
         grid-template-rows:600px auto auto auto auto auto;

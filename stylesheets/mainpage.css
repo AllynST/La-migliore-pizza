@@ -11,15 +11,49 @@ body{
     font-family: Nunito;
     src: url(../font.ttf);
 }
-nav{
+
+nav#mobile{
     display:flex;
+    height:0px;
+    justify-content: space-evenly;
+    grid-area: navbar;
+    
+   
+    background-color: rgb(56, 56, 55);
+    height:100px;
+}
+
+div#expand{
+    background-color: rgb(56, 56, 55);
+    display:flex;    
+    position:absolute;
+    justify-content: space-evenly;
+    height:0px;
+    width: 100vw;
+    left:0px;
+    top:100px;
+    z-index: 500;
+}
+div#expand>a{
+    width:20%;
+    color:rgb(204, 204, 204);
+    font-size: 25px;
+    text-align: center;
+    
+    line-height: 100px;
+    height: 100%;
+
+}
+nav#desktop{
+    /* display:flex; */
+    display:none;
     justify-content: space-evenly;
     grid-area: navbar;
    
 background-color: rgb(56, 56, 55);
 height:100px;
 }
-nav>a{
+nav#desktop>a{
     width:20%;
     color:rgb(204, 204, 204);
     font-size: 15px;
@@ -29,7 +63,16 @@ nav>a{
     height: 100%;
     
 }
-nav>img{
+nav#mobile>img#navButton{
+    margin-top:12px;
+    width:75px;
+    height:75px;
+}
+.mobileNavItm{
+    opacity:0;
+}
+
+nav img{
     width:40%;
     height:100%;
 }
@@ -239,6 +282,9 @@ main#landingpage{
     height:500px;
     margin-bottom: 30px;
 }
+#location li{
+    list-style-type: none;
+}
 #location iframe{
 
     width: 100%;
@@ -272,6 +318,57 @@ div#copyright{
     width:100%;
 
 }
+
+
+@keyframes navExpand{
+    from {
+        height:0px;
+    }
+    to {
+        height:100px;
+    }
+}
+@keyframes navCollapse{
+    from {
+        height:100px;
+    }
+    to {
+        height:0px;
+    }
+}
+@keyframes rotateLeft{
+    from{
+        transform:rotate(0deg)
+    }
+    to{
+        transform:rotate(180deg)
+    }
+}
+@keyframes rotateRight{
+    from{
+        transform:rotate(180deg)
+    }
+    to{
+        transform:rotate(0deg)
+    }
+}
+@keyframes disappear{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity:0;
+    }   
+}
+@keyframes appear{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }   
+}
+
 
 
 @keyframes carousel{

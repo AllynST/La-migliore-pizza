@@ -67,6 +67,51 @@ function daily() {
   }
 }
 
+//
+window.addEventListener("scroll",()=>{
+  state = false;
+      divExpanding.style.animation = "navCollapse 0.5s forwards"
+      navButton.style.animation = "rotateRight 0.5s forwards ease-out"
+      for(let i = 0 ;i<3;i++){
+        
+          navbarMobItms[i].style.animation = "disappear 0.2s forwards"
+      }
+
+})
+
+
+let state = false
+let navButton = document.getElementById("navButton");
+let divExpanding = document.getElementById("expand");
+let navbarMobItms = document.getElementsByClassName("mobileNavItm")
+
+function navExpand(){ 
+  
+    if(state){
+
+      state = false;
+      divExpanding.style.animation = "navCollapse 0.5s forwards"
+      navButton.style.animation = "rotateLeft 0.5s forwards ease-out"
+      for(let i = 0 ;i<3;i++){       
+          navbarMobItms[i].style.animation = "disappear 0.2s forwards"
+      }
+
+
+    }
+    else{
+      state = true;
+      divExpanding.style.animation = "navExpand 0.5s forwards"
+      navButton.style.animation = "rotateRight 0.5s reverse ease-in"
+      setTimeout(()=>{
+        for(let i = 0 ;i<3;i++){          
+          navbarMobItms[i].style.animation = "appear 0.2s forwards"          
+        }
+
+      },500)
+
+    }
+}
+
 //Funkcje nawigujące po stronie na podstawie display = block/none;
 function about(){
   menuPage.style.display = 'none';
