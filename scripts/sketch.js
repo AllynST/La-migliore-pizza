@@ -101,7 +101,7 @@ function navExpand(){
     else{
       state = true;
       divExpanding.style.animation = "navExpand 0.5s forwards"
-      navButton.style.animation = "rotateRight 0.5s reverse ease-in"
+      navButton.style.animation = "rotateRight 0.5s ease-out"
       setTimeout(()=>{
         for(let i = 0 ;i<3;i++){          
           navbarMobItms[i].style.animation = "appear 0.2s forwards"          
