@@ -9,7 +9,7 @@ body{
 }
 @font-face {
     font-family: Nunito;
-    src: url(../font.ttf);
+    src: url(font.ttf);
 }
 
 nav#mobile{
