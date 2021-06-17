@@ -49,8 +49,17 @@
 @media (min-width: 992px) {
     nav#desktop{
         display:flex;
+        font-size: 50px;
 
     }
+    nav#desktop>a{
+        font-size: 30px;
+
+    }
+    nav#desktop>a:hover{
+        color:orangered;
+       
+   }
     nav#mobile{
         display:none;
     }
@@ -102,8 +111,14 @@
     nav a{
         font-size: 30px;
     }
+    nav#desktop>a{
+        font-size: 30px;
+        transition:all 0.2s;
+    }
+    
     #carousel{
         height:600px;
+        
     }
     .carouselIT>img{
         width: 100%;

@@ -7,6 +7,9 @@ body{
     font-family: Nunito;
     user-select: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 @font-face {
     font-family: Nunito;
     src: url(font.ttf);
@@ -68,13 +71,23 @@ nav#mobile>img#navButton{
     width:75px;
     height:75px;
 }
-.mobileNavItm{
+div#expand>.mobileNavItm{
     opacity:0;
+    transition:all 0.2s;
 }
+div#expand>.mobileNavItm:hover{
+    color:orangered;
+}
+
 
 nav img{
     width:40%;
     height:100%;
+}
+nav img#logo{
+    width:200px;
+    height:100%;
+    scale:1.4;
 }
 .bottomBorder{
     border:solid 2px black;
@@ -198,17 +211,27 @@ main#landingpage{
 }
 .card>button{
 
-    background-color: #e3e3e3;
+    background-color: #F9812A;
     border-radius: 5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border:solid 2px #8c8277;
+    border:none;
+    padding:5px;
+    color:white;
+    transition:all 0.2s;
+    font-weight: 700;
+
 
 }
 .card>button:hover{
 
-    background-color: #e3e3e3;
+    background-color: transparent;
     opacity:0.5;
+    font-weight: 700;
+    border:solid 2px #F9812A;
+    color:black;
     border-radius: 5px;
+    scale:1.1;
+    
 
 }
 

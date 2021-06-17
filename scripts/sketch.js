@@ -124,7 +124,7 @@ function about(){
   scroll = setInterval( () =>{
     window.scrollTo(0,i)
     i=i+50;
-    if(aboutUsOfset <i){
+    if(aboutUsOfset*1.2 <i){
       
       clearInterval(scroll);
       
